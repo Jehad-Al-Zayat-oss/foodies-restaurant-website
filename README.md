@@ -4,7 +4,7 @@ A responsive food and restaurant website built using HTML, CSS, JavaScript, and 
 
 ## Live Demo
 
-[View Live Demo](YOUR_LIVE_DEMO_LINK)
+[View Live Demo](https://jehad-al-zayat-oss.github.io/foodies-restaurant-website/)
 
 ## Screenshots
 
