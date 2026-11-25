@@ -1,0 +1,291 @@
+/* Global */
+
+:root {
+  --main-color: #7f252f;
+  --second-color: #3b1319;
+}
+@font-face {
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-family: "Poppins", sans-serif !important;
+}
+P,
+span,
+a {
+  font-family: "Inter", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
+/* Start Progress */
+.progress {
+  height: 0.2rem;
+  z-index: 999999;
+}
+.progress > div {
+  background-color: var(--main-color);
+}
+/* End Progress */
+/* Start Navbar */
+.navbar .logo {
+  font-family: "Lobster", sans-serif;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.navbar .nav-link {
+  color: var(--main-color);
+  transition: 0.3s;
+  font-family: "Poppins";
+}
+.navbar .nav-link.active {
+  color: white;
+  background-color: var(--main-color);
+}
+.navbar .nav-link:not(.active):hover {
+  color: white;
+  background-color: var(--main-color);
+}
+.navbar .navbar-toggler {
+  transition: 0.3s;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+.navbar .navbar-toggler:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+/* End Navbar */
+/* Start Landing */
+.landing {
+  height: 100dvh;
+}
+.landing .info h1 {
+  color: var(--second-color);
+  font-size: 3rem;
+  font-weight: bold;
+}
+.landing .info .links > a {
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+.landing .info .links > a:hover {
+  background-color: white;
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color);
+}
+.landing .photo > img {
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+/* End Landing */
+/* Start Counters */
+.counters {
+  background-color: var(--main-color);
+}
+
+/* End Counters */
+/* Start Our Story */
+.our-story .row .image > img {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+.our-story .row .info h1 {
+  color: var(--second-color);
+}
+.our-story .row .info a {
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+.our-story .row .info a:hover {
+  background-color: white;
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color);
+}
+/* End Our Story */
+/* Start About Us */
+.about-us .row .info h1 {
+  color: var(--second-color);
+}
+.about-us .row .info ul li svg {
+  color: var(--main-color);
+}
+.about-us .row .info a {
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+.about-us .row .info a:hover {
+  background-color: white;
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color);
+}
+.about-us .row .image img {
+  border-radius: 15px 60px 15px 60px;
+  -webkit-border-radius: 15px 60px 15px 60px;
+}
+/* End About Us */
+/* Start Promo */
+.promo {
+  background-image: url("../images/promo.WebP");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1000;
+}
+.promo::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #a79f9fa2;
+  z-index: -1;
+}
+.promo h1 {
+  color: var(--second-color);
+}
+.promo a {
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+.promo a:hover {
+  background-color: white;
+  color: var(--second-color) !important;
+  border: 1px solid var(--main-color);
+}
+/* End Promo */
+/* Start Foods Explore */
+
+.foods-explore .container > h1 {
+  color: var(--second-color);
+}
+.foods-explore .row .card a {
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+.foods-explore .row .card a:hover {
+  background-color: white;
+  color: var(--second-color) !important;
+  border: 1px solid var(--main-color);
+}
+
+.foods-explore .row .card h5 {
+  color: var(--second-color);
+}
+.foods-explore .row .card .price {
+  border-bottom: 1px solid var(--second-color);
+}
+.foods-explore .row .card .price > span:first-child {
+  color: var(--second-color);
+}
+
+/* End Foods Explore */
+
+/* Start Testimonials */
+.testimonials {
+  background-color: var(--main-color);
+}
+.testimonials .carousel {
+  width: 90% !important;
+}
+.testimonials .carousel-indicators button {
+  background-color: #3b1319 !important;
+}
+.testimonials .next-btn,
+.testimonials .prev-btn {
+  color: var(--main-color) !important;
+}
+.testimonials .carousel .card span {
+  color: var(--main-color);
+}
+/* End Testimonials */
+/* Start Frequently Asked Questions */
+.questions .container > h1,
+.questions .row h5 {
+  color: var(--second-color);
+}
+
+/* End Frequently Asked Questions */
+/* Start Banner Section */
+.banner {
+  position: relative;
+  background: url("../images/banner.WebP") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #484747a2;
+  z-index: -1;
+}
+.banner a {
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+.banner a:hover {
+  background-color: white;
+  color: var(--second-color) !important;
+  border: 1px solid var(--main-color);
+}
+/* End Banner Section */
+/* Start Subscribe */
+.subscribe h1 {
+  color: var(--second-color) !important;
+}
+.subscribe form [type="email"] {
+  border: 1px solid var(--main-color) !important;
+}
+.subscribe form [type="email"]:focus {
+  outline: none;
+}
+.subscribe form [type="email"]::placeholder {
+  color: var(--main-color);
+}
+.subscribe form [type="submit"] {
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+.subscribe form [type="submit"]:hover {
+  background-color: white;
+  color: var(--second-color) !important;
+  border: 1px solid var(--main-color);
+}
+/* End Subscribe */
+/* Start Footer */
+footer {
+  background-color: var(--main-color);
+}
+/* End Footer */
